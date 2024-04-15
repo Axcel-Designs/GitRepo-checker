@@ -1,3 +1,6 @@
 body{
-    background-color: aqua;
+        background-image: linear-gradient(to right, aqua, yellow);
+}
+.inputspace{
+    background-color: blanchedalmond;
 }

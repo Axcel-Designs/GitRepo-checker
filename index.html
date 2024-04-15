@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GitHub Repositories</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="p-4" ng-controller="MainController as vm">
     <div class="max-w-md mx-auto">
       <input type="text" ng-model="vm.username" placeholder="Enter GitHub username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-      <button ng-click="vm.searchRepositories()" class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Search</button>
+      <button ng-click="vm.searchRepositories()" class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" class="inputspace">Search</button>
 
       <div ng-if="vm.repositories.length">
         <h2 class="mt-4">Public Repositories for {{ vm.username }}</h2>
